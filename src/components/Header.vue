@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div>Logo</div>
+    <div>{{ logo }}</div>
     <nav>
       <ul>
         <li>home</li>
