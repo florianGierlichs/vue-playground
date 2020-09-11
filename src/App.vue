@@ -2,12 +2,14 @@
   <div id="app">
     <Header logo="Logo" />
     <Cards v-bind:users="users" />
+    <Form />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
 import Cards from './components/Cards';
+import Form from './components/Form';
 const axios = require('axios');
 
 export default {
@@ -15,6 +17,7 @@ export default {
   components: {
     Header,
     Cards,
+    Form,
   },
   data() {
     return {
