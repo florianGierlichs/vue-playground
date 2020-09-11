@@ -8,7 +8,7 @@
 <script>
 import Header from './components/Header.vue';
 import Cards from './components/Cards';
-//const axios = require('axios');
+const axios = require('axios');
 
 export default {
   name: 'App',
@@ -18,19 +18,22 @@ export default {
   },
   data() {
     return {
-      users: [
-        { name: 'John', age: 28, favoriteFood: 'Pizza' },
-        { name: 'Jane', age: 24, favoriteFood: 'Pasta' },
-        { name: 'Fritz', age: 32, favoriteFood: 'Sushi' },
-        { name: 'Anna', age: 28, favoriteFood: 'Salat' },
-      ],
+      users: [],
     };
   },
-  // mounted () {
-  //   axios
-  //     .get('https://api.coindesk.com/v1/bpi/currentprice.json')
-  //     .then(response => (this.info = response))
-  // }
+  mounted() {
+    axios
+      .get(
+        'https://my-json-server.typicode.com/florianGierlichs/vue-playground/users'
+      )
+      .then((response) => {
+        return response.data;
+      })
+      .then((response) => {
+        this.users = response;
+        return this.users;
+      });
+  },
 };
 </script>
 
