@@ -8,6 +8,7 @@
 <script>
 import Header from './components/Header.vue';
 import Cards from './components/Cards';
+const axios = require('axios');
 
 export default {
   name: 'App',
@@ -25,7 +26,11 @@ export default {
       ],
     };
   },
-  methods: {},
+  // mounted () {
+  //   axios
+  //     .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+  //     .then(response => (this.info = response))
+  // }
 };
 </script>
 

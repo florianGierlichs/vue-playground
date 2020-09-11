@@ -1,0 +1,8 @@
+{
+  "users": [
+    { "name": "John", "age": 28, "favoriteFood": "Pizza" },
+    { "name": "Jane", "age": 24, "favoriteFood": "Pasta" },
+    { "name": "Fritz", "age": 32, "favoriteFood": "Sushi" },
+    { "name": "Anna", "age": 28, "favoriteFood": "Salat" }
+  ]
+}
