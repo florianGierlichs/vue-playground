@@ -8,7 +8,7 @@
 <script>
 import Header from './components/Header.vue';
 import Cards from './components/Cards';
-const axios = require('axios');
+//const axios = require('axios');
 
 export default {
   name: 'App',
