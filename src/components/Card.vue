@@ -3,6 +3,7 @@
     <div class="userInfo">{{ user.name }}</div>
     <div class="userInfo">{{ user.age }}</div>
     <div class="userInfo">{{ user.favoriteFood }}</div>
+    <button v-on:click="handleClick">click</button>
   </li>
 </template>
 
@@ -12,6 +13,12 @@ export default {
   props: {
     user: {
       type: Object,
+    },
+  },
+  methods: {
+    handleClick(e) {
+      e.preventDefault();
+      alert(this.user.name);
     },
   },
 };
