@@ -3,6 +3,7 @@
     <Header logo="Logo" />
     <Cards v-bind:users="users" />
     <Form />
+    <TransitionBox />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from './components/Header.vue';
 import Cards from './components/Cards';
 import Form from './components/Form';
+import TransitionBox from "./components/TransitionBox";
 const axios = require('axios');
 
 export default {
@@ -18,6 +20,7 @@ export default {
     Header,
     Cards,
     Form,
+    TransitionBox,
   },
   data() {
     return {
