@@ -29,7 +29,7 @@ header {
   align-items: center;
   width: 100%;
   > * {
-    padding: 0 50px;
+    padding: 15px 50px;
   }
 }
 
